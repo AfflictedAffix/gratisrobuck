@@ -46,32 +46,27 @@
 
         /* Heading styling */
         h1, h2 {
-            text-shadow: 2px 2px 0px #000, 
-                         -2px -2px 0px #000, 
-                         -2px 2px 0px #000, 
-                         2px -2px 0px #000;
-            color: #28a745;
+            text-shadow: 
+                2px 2px 4px rgba(0, 0, 0, 0.8),  /* Bottom-right shadow with blur */
+                -2px -2px 4px rgba(0, 0, 0, 0.8), /* Top-left shadow with blur */
+                -2px 2px 4px rgba(0, 0, 0, 0.8),  /* Bottom-left shadow with blur */
+                2px -2px 4px rgba(0, 0, 0, 0.8); /* Top-right shadow with blur */
+            color: #28a745; /* Your desired text color */
+        }
+        
+        a {
+            text-shadow: 
+                2px 2px 4px rgba(0, 0, 0, 0.8), 
+                -2px -2px 4px rgba(0, 0, 0, 0.8), 
+                -2px 2px 4px rgba(0, 0, 0, 0.8), 
+                2px -2px 4px rgba(0, 0, 0, 0.8);
+            color: #ff0000;
         }
 
-        /* Link styling */
-        a {
-            text-shadow: 2px 2px 0px #000, 
-                         -2px -2px 0px #000, 
-                         -2px 2px 0px #000, 
-                         2px -2px 0px #000;
-            color: #ffeb3b;
-            text-decoration: none;
-            font-weight: 700;
-            margin-top: 1rem;
-            padding: 10px 20px;
-            border: 2px solid #ffeb3b;
-            border-radius: 5px;
-            transition: all 0.3s ease-in-out;
-        }
 
         /* Link hover effect */
         a:hover {
-            background-color: #ffeb3b;
+            background-color: #ff0000;
             color: #000;
         }
     </style>
