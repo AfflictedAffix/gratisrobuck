@@ -15,17 +15,21 @@
         body {
             background-image: url('icon/Download.jpg');
             background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
+            background-size: cover; /* Ensures the image covers the screen */
+            background-position: center center; /* Centers the image */
             color: green;
             text-align: center;
             font-family: 'Kanit', sans-serif;
+            height: 100vh; /* Ensures the body takes full height of the viewport */
+            margin: 0; /* Removes default margins */
         }
+        
         @media (max-width: 768px) {
             body {
                 background-image: url('icon/Download-mobile.jpg');
-                background-size: cover;
+                background-size: cover; /* Cover the screen without overflowing */
                 background-position: center center;
+                height: 100vh; /* Ensures the body still takes full height of viewport */
             }
         }
     </style>
