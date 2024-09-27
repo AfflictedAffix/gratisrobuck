@@ -12,6 +12,9 @@
     <meta property="og:description" content="Bis zu 100.000 R$ Täglich möglich. 🤑" />
     <meta property="og:url" content="https://gratisrobux.de" />
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="icon/favicon.png">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700&display=swap" rel="stylesheet">
 
@@ -35,6 +38,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 20px;
+            position: relative; /* for button placement */
         }
 
         /* Responsive background for mobile */
@@ -45,15 +50,34 @@
         }
 
         /* Heading styling */
-        h1, h2, h3 {
+        h1, h2 {
             text-shadow: 
-                2px 2px 4px rgba(0, 0, 0, 0.8),  /* Bottom-right shadow with blur */
-                -2px -2px 4px rgba(0, 0, 0, 0.8), /* Top-left shadow with blur */
-                -2px 2px 4px rgba(0, 0, 0, 0.8),  /* Bottom-left shadow with blur */
-                2px -2px 4px rgba(0, 0, 0, 0.8); /* Top-right shadow with blur */
-            color: #28a745; /* Your desired text color */
+                2px 2px 4px rgba(0, 0, 0, 0.8),
+                -2px -2px 4px rgba(0, 0, 0, 0.8),
+                -2px 2px 4px rgba(0, 0, 0, 0.8),
+                2px -2px 4px rgba(0, 0, 0, 0.8);
+            color: #28a745;
+            margin-bottom: 15px;
         }
-        
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Link styling */
         a {
             text-shadow: 
                 2px 2px 4px rgba(0, 0, 0, 0.8), 
@@ -61,14 +85,59 @@
                 -2px 2px 4px rgba(0, 0, 0, 0.8), 
                 2px -2px 4px rgba(0, 0, 0, 0.8);
             color: #ff0000;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            a {
+                font-size: 1rem;
+            }
+        }
+
+        /* Login button in the top right corner */
+        .login-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            font-size: 1rem;
+        }
+
+        .login-btn:hover {
+            background-color: #cc0000;
+        }
+
+        @media (max-width: 768px) {
+            .login-btn {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
         }
 
     </style>
 </head>
 <body>
+
+    <!-- Login Button -->
+    <button class="login-btn" onclick="location.href='https://gratisrobux.de';">Admin Login</button>
+
     <h1>Verdiene Gratis täglich bis zu 100k Robux</h1>
     <h2>Kostenlos und ohne Anmeldung</h2>
-    <h3>Bald öffnen wir für alle</h3>
-    <a href="https://www.youtube.com/@Itzz_Robl0x_easy" target="_blank" rel="noopener noreferrer">Besuche unser YouTube</a>
+    <h2>Bald öffnen wir für alle</h2>
+    
+    <!-- YouTube Link -->
+    <a href="https://www.youtube.com/@Itzz_Robl0x_easy" target="_blank" rel="noopener noreferrer">Unser YouTube</a>
+
 </body>
 </html>
