@@ -1,143 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <title>Verdiene Gratis Robux 🤑</title>
-
-    <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="💰 Verdiene Gratis Robux! 💰" />
-    <meta property="og:description" content="Bis zu 100.000 R$ Täglich möglich. 🤑" />
-    <meta property="og:url" content="https://gratisrobux.de" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="icon/favicon.png">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700&display=swap" rel="stylesheet">
-
-    <!-- Stylesheet -->
-    <style>
-        /* Reset browser defaults */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Body styling */
-        body {
-            background: url('icon/Download.jpg') center center/cover no-repeat;
-            color: #28a745;
-            font-family: 'Kanit', sans-serif;
-            text-align: center;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            position: relative; /* for button placement */
-        }
-
-        /* Responsive background for mobile */
-        @media (max-width: 768px) {
-            body {
-                background: url('icon/Download-mobile.jpg') center center/cover no-repeat;
-            }
-        }
-
-        /* Heading styling */
-        h1, h2 {
-            text-shadow: 
-                2px 2px 4px rgba(0, 0, 0, 0.8),
-                -2px -2px 4px rgba(0, 0, 0, 0.8),
-                -2px 2px 4px rgba(0, 0, 0, 0.8),
-                2px -2px 4px rgba(0, 0, 0, 0.8);
-            color: #28a745;
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            font-size: 2rem;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-        }
-
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.5rem;
-            }
-            h2 {
-                font-size: 1.2rem;
-            }
-        }
-
-        /* Link styling */
-        a {
-            text-shadow: 
-                2px 2px 4px rgba(0, 0, 0, 0.8), 
-                -2px -2px 4px rgba(0, 0, 0, 0.8), 
-                -2px 2px 4px rgba(0, 0, 0, 0.8), 
-                2px -2px 4px rgba(0, 0, 0, 0.8);
-            color: #ff0000;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.2rem;
-            margin-top: 20px;
-        }
-
-        @media (max-width: 768px) {
-            a {
-                font-size: 1rem;
-            }
-        }
-
-        /* Login button in the top right corner */
-        .login-btn {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background-color: #ff0000;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            font-size: 1rem;
-        }
-
-        .login-btn:hover {
-            background-color: #cc0000;
-        }
-
-        @media (max-width: 768px) {
-            .login-btn {
-                padding: 8px 15px;
-                font-size: 0.9rem;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page | AsmrProg</title>
 </head>
+
 <body>
 
-    <!-- Login Button -->
-    <button class="login-btn" onclick="location.href='https://gratisrobux.de/login';">Shit Login</button>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <h1>Verdiene Gratis täglich bis zu 100k Robux</h1>
-    <h2>Kostenlos und ohne Anmeldung</h2>
-    <h2>Bald öffnen wir für alle</h2>
-    
-    <!-- YouTube Link -->
-    <a href="https://www.youtube.com/@Itzz_Robl0x_easy" target="_blank" rel="noopener noreferrer">Unser YouTube</a>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
