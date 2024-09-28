@@ -20,14 +20,19 @@ body {
 }
 
 .stars {
-  position: fixed;
-  z-index: 1;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 120%;
-  transform: rotate(-45deg);
+  height: 100%;
+  z-index: 0; /* Keep the stars behind other content */
 }
+
+a {
+  position: relative;  /* Bring the link forward */
+  z-index: 1;
+}
+
 
 
 .star {
