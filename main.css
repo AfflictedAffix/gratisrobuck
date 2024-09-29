@@ -1,0 +1,43 @@
+@mixin sp-layout {
+    @media screen and (max-width: 750px) {
+      @content;
+    }
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0d0e15 100%);
+    overflow: hidden;
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translate3d(-30em, 0, 0);
+    }
+  }
+  
+  @keyframes tail-fade {
+    0%, 50% {
+      width: var(--star-tail-length);
+      opacity: 1;
+    }
+  
+    70%, 80% {
+      width: 0;
+      opacity: 0.4;
+    }
+  
+    100% {
+      width: 0;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0.6;
+    }
+  }
