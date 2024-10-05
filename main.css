@@ -13,19 +13,6 @@ body {
   overflow: hidden;
 }
 
-a {
-  text-shadow: 
-      2px 2px 4px rgba(0, 0, 0, 0.8), 
-      -2px -2px 4px rgba(0, 0, 0, 0.8), 
-      -2px 2px 4px rgba(0, 0, 0, 0.8), 
-      2px -2px 4px rgba(0, 0, 0, 0.8);
-  color: #ff0000;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin-top: 20px;
-}
-
 .footerContent {
   color: white;
   font-family: 'Kanit', sans-serif;
