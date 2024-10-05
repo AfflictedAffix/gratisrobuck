@@ -14,8 +14,29 @@ body {
 }
 
 a {
-  position: relative;  /* Bring the link forward */
-  z-index: 1;
+  text-shadow: 
+      2px 2px 4px rgba(0, 0, 0, 0.8), 
+      -2px -2px 4px rgba(0, 0, 0, 0.8), 
+      -2px 2px 4px rgba(0, 0, 0, 0.8), 
+      2px -2px 4px rgba(0, 0, 0, 0.8);
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.footerContent {
+  color: white;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  margin-top: auto;
 }
 
 @keyframes fall {
