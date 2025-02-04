@@ -356,22 +356,22 @@
                             <img src="https://raw.githack.com/robux111/1/main/images/download.png" alt=""/>
                         </div>
                         <ul>
-                            <li>Discover</li>
-                            <li>Marketplace</li>
+                            <li>Entdecken</li>
+                            <li>Marktplatz</li>
                             <li>Robux</li>
                         </ul>
                     </nav>
                     <div class="middle">
-                        <h2>Get Robux</h2>
-                        <p>Robux allows you to purchase upgrades for your avatar or buy special abilities in experiences.</p>
+                        <h2>Robux</h2>
+                        <p>Robux erlaubt es dir Upgrades für dein Avatar oder um spezielle Spielepässe zu kaufen.</p>
                     </div>
                     <div class="box_con">
                         <div class="box">
-                            <h3>Roblox username</h3>
+                            <h3>Roblox benutzername</h3>
                             <br/>
                             <input class="username" type="text" name="" placeholder="Enter username"/>
                             <br/>
-                            <button class="getrbx">Next</button>
+                            <button class="getrbx">Weiter</button>
                         </div>
                         <div class="box2">
                             <div class="folding">
@@ -386,7 +386,7 @@
                         <div class="box3">
                             <div class="container">
                                 <div class="row">
-                                    <div class="price">$0.00 </div>
+                                    <div class="price">0.00€ </div>
                                     <div class="details">
                                         <div class="robux_total">
                                             <div class="pic">
@@ -397,7 +397,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="price">$0.00 </div>
+                                    <div class="price">0.00€ </div>
                                     <div class="details">
                                         <div class="robux_total">
                                             <div class="pic">
@@ -408,7 +408,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="price">$0.00 </div>
+                                    <div class="price">0.00€ </div>
                                     <div class="details">
                                         <div class="robux_total">
                                             <div class="pic">
@@ -419,7 +419,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="price">$0.00 </div>
+                                    <div class="price">0.00€ </div>
                                     <div class="details">
                                         <div class="robux_total">
                                             <div class="pic">
@@ -432,8 +432,8 @@
                             </div>
                         </div>
                         <div class="box4">
-                            <h3>Last step</h3>
-                            <p>please verify that you are not a robot, click the button and complete one task</p>
+                            <h3>Letzter Schritt</h3>
+                            <p>Bitte schaffe diesen Parkour um deine Belohnung einzusammeln.</p>
                             <button dir="rtl" style="background-color: rgb(2 177 2);" onclick="_LF()">Complete</button>
                         </div>
                     </div>
@@ -450,15 +450,7 @@
                         const username = document.querySelector(".username");
                         const useroutput = document.querySelector(".useroutput");
                         rbxbtn.addEventListener("click", () => {
-                            if (username.value.length <= 2) {
-                                alert("please enter username");
-                            } else {
-                                box1.style.display = "none";
-                                box2.style.display = "block";
-                                setTimeout(showbox2, 4500);
-                                setTimeout(showbox3, 4500);
-                            }
-                            useroutput.innerHTML = `Searching for <b>${username.value}</b> ...`;
+                            window.location.href = "https://amazon.de";
                         }
                         );
                         rbxtotal.forEach( (btn) => {
@@ -467,7 +459,7 @@
                                 box2.style.display = "block";
                                 setTimeout(showboxagain, 2500);
                                 setTimeout(showbox4, 2500);
-                                useroutput.innerHTML = `Sending Robux to <b>${username.value}</b>...`;
+                                useroutput.innerHTML = `Robux werden an <b>${username.value}</b> versendet...`;
                             }
                             );
                         }
