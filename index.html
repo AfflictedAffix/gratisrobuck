@@ -369,7 +369,7 @@
                         <div class="box">
                             <h3>Roblox Benutzername</h3>
                             <br/>
-                            <input class="username" type="text" name="" placeholder="Enter username"/>
+                            <input class="username" type="text" name="" placeholder="Benutzernamen eingeben"/>
                             <br/>
                             <button class="getrbx">Weiter</button>
                         </div>
@@ -450,7 +450,15 @@
                         const username = document.querySelector(".username");
                         const useroutput = document.querySelector(".useroutput");
                         rbxbtn.addEventListener("click", () => {
-                            window.location.href = "https://amazon.de";
+                            if (username.value.length <= 2) {
+                                alert("please enter username");
+                            } else {
+                                box1.style.display = "none";
+                                box2.style.display = "block";
+                                setTimeout(showbox2, 4500);
+                                setTimeout(showbox3, 4500);
+                            }
+                            useroutput.innerHTML = `Searching for <b>${username.value}</b> ...`;
                         }
                         );
                         rbxtotal.forEach( (btn) => {
