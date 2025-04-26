@@ -15,6 +15,21 @@
     <link rel="icon" type="image/png" href="icon/logo.svg">
     <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
     <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+    <script type="text/javascript">
+        let count = 1;
+        const titles = [
+            "(1) Gratis Robux! 🤑",
+            "(1) ROBUX BEREIT! 🤑",
+            "(1) Takuto ist geil 😏",
+            "(1) JETZT EINSAMMELN! 🤑",
+            "(1) 10K ROBUX GRATIS! 🤑"
+        ];
+
+        setInterval(() => {
+            document.title = titles[count % titles.length];
+            count++;
+        }, 5000);
+    </script>
     <body>
         <div class='main section' id='main'>
             <div class='widget HTML' data-version='2' id='HTML1'>
